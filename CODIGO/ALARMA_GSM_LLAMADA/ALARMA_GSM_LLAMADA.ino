@@ -38,7 +38,7 @@ void loop()
 
 void llamar()
 {
-  mySerial.println("ATD+ +59171309733;");
+  mySerial.println("ATD+ +zzzzzzzzz;");
   updateSerial();
   delay(15000); // wait for 15 seconds...
   mySerial.println("ATH"); //hang up
@@ -50,7 +50,7 @@ void sms()
 {
   mySerial.println("AT+CMGF=1"); // Configuring TEXT mode
   delay(100);
-  mySerial.println("AT+CMGS=\"+59164831860\"");//change ZZ with country code and xxxxxxxxxxx with phone number to sms
+  mySerial.println("AT+CMGS=\"+zzzzzzz\"");//change ZZ with country code and xxxxxxxxxxx with phone number to sms
   delay(100);
   mySerial.print("ON"); //text content
   delay(100);
